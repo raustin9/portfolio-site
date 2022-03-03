@@ -1,0 +1,125 @@
+.music-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 11vh;
+  width: 80%;
+}
+
+.song-item {
+  position: relative;
+}
+
+.player {
+  max-width: 830px;
+  min-width: 700px;
+  width: 80%;
+  height: 110px;
+  background-color: #000000;
+  border: 2px solid #54DD8C;
+  display: flex;
+}
+
+.player .image-box {
+  position: relative;
+  height: 110px;
+  width: 110px;
+}
+
+.player .image-box img {
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  object-fit: cover;
+}
+
+.music-controls {
+  width: calc(100% - 110px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 8px;
+}
+
+.song-title {
+  font-family: 'MuseoModerno', cursive;
+  color: #54DD8C;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+button {
+  all: unset;
+}
+
+audio {
+  all: unset;
+}
+
+.play-btn {
+  font-size: 1.5rem;
+  color: #54DD8C;
+  transition: 200ms;
+  margin-left: 15px;
+}
+
+.play-btn:hover {
+  cursor: pointer;
+  color: #93E1B3;
+  transition: 200ms ease;
+}
+
+.timeslider {
+  margin-left: 8px;
+  width: 86%;
+}
+
+.volumesvg {
+  margin-left: 8px;
+  color: #54DD8C;
+  transition: 200ms;
+  font-size: 1.8rem;
+}
+
+.volumesvg:hover {
+  cursor: pointer;
+  color: #93E1B3;
+  transition: 200ms ease;
+}
+
+.music-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.timer {
+  font-size: 10px;
+  font-weight: 200;
+  color: rgb(196, 196, 196);
+}
+
+.slider-info {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 83%;
+}
+
+.timer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.timer.dtimer {
+  margin-left: auto;
+  margin-right: 0;
+}

@@ -1,0 +1,110 @@
+.main-content {
+  margin-top: 3%;
+  height: 80%;
+  width: 85%;
+  display: grid;
+  background-color: #000000;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.grid-item {
+  position: relative;
+  border: 2px solid #54DD8C;
+  background-color: #000000;
+  border-radius: 0;
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  transition: 300ms;
+  text-decoration: none;
+}
+
+.grid-item:hover {
+  background-color: #54DD8C;
+  color: #ffffff;
+}
+.grid-item:hover > .text {
+  color: #000000;
+}
+
+.text {
+  font-family: 'MuseoModerno', cursive;
+  color: #54DD8C;
+  /* position: absolute; */
+}
+
+/* Grid items */
+#music {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+
+#resume {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+}
+
+#pixelart {
+  grid-row: 1 / span 2;
+  grid-column: 3 / span 3;
+}
+.pixelartimg {
+  height: 100%;
+  width: 100%;
+  background-image: url('./pixelart3.png');
+  transition: 200ms ease;
+}
+.pixelartimg:hover {
+  -webkit-filter: blur(4px); 
+  filter: blur(4px);
+  transition: 200ms ease;
+}
+
+#aboutme {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+}
+
+#projects {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+}
+
+/* Grid Icons */
+.Icon {
+  visibility: hidden;
+  font-size: 1rem;
+  color: #000000;
+  transition: 200ms ease;
+}
+
+#resume:hover > .Icon {
+  font-size: 4rem;
+  visibility: visible;
+  margin-top: 40px;
+  transition: 200ms ease;
+}
+#aboutme:hover > .Icon {
+  font-size: 4rem;
+  visibility: visible;
+  margin-top: 40px;
+  transition: 200ms ease;
+}
+#projects:hover > .Icon {
+  font-size: 4rem;
+  visibility: visible;
+  margin-top: 40px;
+  transition: 200ms ease;
+}
+#music:hover > .Icon {
+  font-size: 4rem;
+  visibility: visible;
+  margin-top: 40px;
+  transition: 200ms ease;
+}
