@@ -23,6 +23,8 @@ const Resume = () => {
           </div>
           <h1 className="resume-education-utk-major">Major: Computer Science</h1>
           <h1 className="resume-education-utk-involvement">Involvement: Hack4Impact, WebDev UTK</h1>
+          <h1 className="resume-education-utk-involvement">Chancellor's Honors & Scholars Program</h1>
+          <h1 className="resume-education-utk-involvement">Cook Grand Challenge Honors Engineering</h1>
           <h1 className="resume-education-utk-gpa">GPA: 3.86/4.00</h1>
         </div>
         <div className="resume-job-experience">
