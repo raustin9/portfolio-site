@@ -7,6 +7,9 @@ import dogma from './Songs/Dogma.mp3'
 import s32120 from './Songs/32120.mp3'
 import s122418 from './Songs/122418.mp3'
 import mmwremix from './Songs/markmywordsremix.mp3'
+import lonely from './Songs/lonely.mp3'
+import pressure from './Songs/pressure.mp3'
+import eclipse from './Songs/eclipse.mp3'
 
 import cityimg from './Images/vaporwavecity.jpg'
 import greenimg from './Images/greenaesthetic.jpg'
@@ -20,7 +23,21 @@ import './Styles/thumb.css'
 function Music() {
   return(
     <div className="music-content">
-      <Song 
+      <div className="music-context">
+        <div className="music-link-div">
+          <a rel="noreferrer" target="_blank" href="https://soundcloud.com/user-940134563" className="music-link">
+            <FaIcon.FaMusic className="music-logo"/>
+            <FaIcon.FaMusic className="music-logo-shadow"/>
+          </a>
+        </div>
+        <div className="context-text-container">
+          <h1 className="context-text">
+            
+          </h1>
+        </div>
+      </div>
+      <div className="song-container">
+        <Song 
         src={cycles} 
         img={sunset} 
         className="song-item" 
@@ -28,13 +45,19 @@ function Music() {
       >Cycles</Song>
       <Song 
         src={everest} 
-        img={cityimg} 
+        img={sunset} 
         className="song-item" 
         id="Everest"
       >Everest</Song>
       <Song 
+        src={lonely} 
+        img={sunset} 
+        className="song-item" 
+        id="Lonely"
+      >Lonely</Song>
+      <Song 
         src={dogma} 
-        img={greenimg} 
+        img={sunset} 
         className="song-item" 
         id="Dogma"
       >Dogma</Song>
@@ -45,17 +68,30 @@ function Music() {
         id="MMWRemix"
       >Nipsey Hustle - Mark My Words (Remix)</Song>
       <Song 
+        src={pressure} 
+        img={sunset} 
+        className="song-item" 
+        id="pressure"
+      >Pressure</Song>
+      <Song 
+        src={eclipse} 
+        img={sunset} 
+        className="song-item" 
+        id="eclipse"
+      >Eclipse</Song>
+      <Song 
         src={s122418} 
         img={sunset} 
         className="song-item" 
         id="s122418"
-      >122418</Song>
+      >12.24.18</Song>
       <Song 
         src={s32120} 
         img={sunset} 
         className="song-item" 
         id="s32120"
-      >32120</Song>
+      >3.21.20 - 3:23:20, 4.01 PM</Song>
+      </div>
     </div>
   )
 }

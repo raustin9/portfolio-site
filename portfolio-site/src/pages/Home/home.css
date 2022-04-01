@@ -55,14 +55,27 @@
   grid-column: 3 / span 3;
 }
 .pixelartimg {
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
   background-image: url('./pixelart3.png');
   transition: 200ms ease;
 }
-.pixelartimg:hover {
+#pixelart img {
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+  transition: 200ms ease;
+  max-width: 100%;
+  z-index: 0;
+}
+#pixelart:hover > img {
+  -webkit-filter: blur(6px); 
+  filter: blur(6px);
+  transition: 200ms ease;
+}
+#pixelart:hover > .pixelartimg {
   -webkit-filter: blur(4px); 
-  filter: blur(4px);
+  filter: blur(6px);
   transition: 200ms ease;
 }
 
@@ -106,5 +119,12 @@
   font-size: 4rem;
   visibility: visible;
   margin-top: 40px;
+  transition: 200ms ease;
+}
+
+.pixeltext {
+  position: absolute;
+  font-family: 'MuseoModerno', cursive;
+  color: #54DD8C;
   transition: 200ms ease;
 }

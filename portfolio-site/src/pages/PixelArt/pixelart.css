@@ -1,3 +1,10 @@
 h1 {
   color: #ffffff;
 }
+
+.pixel-art-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

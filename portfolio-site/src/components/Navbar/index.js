@@ -30,6 +30,7 @@ function Navbar() {
       
       <div className="link-container">
         <Link to="/aboutme" className="navlink">about me</Link>
+        <Link to="/resume" className="navlink">resume</Link>
         <Link to="/projects" className="navlink">projects</Link>
         <Link to="/music" className="navlink">music</Link>
         <Link to="/pixelart" className="navlink">pixel art</Link>
@@ -77,7 +78,7 @@ function DropdownMenu() {
       <DropdownItem href="https://soundcloud.com/user-940134563" icon={<FaIcons.FaSoundcloud/>}>
         Soundcloud
       </DropdownItem>
-      <DropdownLink to="/home" icon={<FaIcons.FaPaperclip/>}>Resume</DropdownLink>
+      <DropdownLink to="/resume" icon={<FaIcons.FaPaperclip/>}>Resume</DropdownLink>
     </div>
   )
 }

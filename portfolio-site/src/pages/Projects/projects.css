@@ -1,3 +1,54 @@
-h1 {
+.projects-content {
+  width: 100%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  top: 7vh;
+  position: absolute;
+}
+
+.projects-grid-item {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 200ms;
+}
+
+.projects-grid-item:hover {
+  transition: 200ms;
+  background-color: #141414;
+}
+
+#portfolio-site {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+
+#image-processing {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+}
+
+#next-project {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.project-title {
+  color: #54DD8C;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.8rem;
+  font-weight: normal;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.project-text {
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.4rem;
   color: #ffffff;
+  text-align: center;
+  color: #54DD8C;
 }

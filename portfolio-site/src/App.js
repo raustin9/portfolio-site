@@ -6,6 +6,7 @@ import AboutMe from './pages/AboutMe'
 import PixelArt from './pages/PixelArt'
 import Music from './pages/Music'
 import Projects from './pages/Projects'
+import Resume from './pages/Resume'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/pixelart" element={<PixelArt />} />
           <Route path="/music" element={<Music />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </Router>
     </div>

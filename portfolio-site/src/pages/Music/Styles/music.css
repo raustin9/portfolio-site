@@ -1,16 +1,25 @@
 .music-content {
   display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 11vh;
-  width: 80%;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin-top: 13vh;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
-.song-item {
-  position: relative;
+.song-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  width: 50%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 90%;
 }
+
+/* Songs styling */
 
 .player {
   max-width: 830px;
@@ -18,7 +27,7 @@
   width: 80%;
   height: 110px;
   background-color: #000000;
-  border: 2px solid #54DD8C;
+  border-bottom: 2px solid #54DD8C;
   display: flex;
 }
 
@@ -71,11 +80,6 @@ audio {
   transition: 200ms ease;
 }
 
-.timeslider {
-  margin-left: 8px;
-  width: 86%;
-}
-
 .volumesvg {
   margin-left: 8px;
   color: #54DD8C;
@@ -122,4 +126,82 @@ audio {
 .timer.dtimer {
   margin-left: auto;
   margin-right: 0;
+}
+
+/* Music Context Styling */
+
+.music-context {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 70%;
+  padding-top: 20px;
+}
+
+.music-link {
+  display: flex;
+  width: 300px;
+  height: 300px;
+}
+
+.music-link:hover > .music-logo {
+  color: #ffffff;
+  transition: 200ms ease;
+}
+
+.music-link:hover > .music-logo-shadow {
+  color: #54DD8C;
+  transition: 200ms;
+}
+
+.music-logo {
+  position: absolute;
+  color: #54DD8C;
+  font-size: 18vw;
+  transition: 200ms ease;
+  z-index: 2;
+}
+
+.music-logo-shadow {
+  position: absolute;
+  color: #ffffff;
+  font-size: 18vw;
+  transition: 200ms ease;
+  z-index: 1;
+  margin-left: 6px;
+  margin-top: 6px;
+}
+
+.context-text-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.context-text {
+  color: #54DD8C;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 25px;
+}
+
+/* Scrollbar Styling */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #54DD8C;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #93E1B3;
 }

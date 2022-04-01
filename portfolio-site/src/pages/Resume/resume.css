@@ -1,0 +1,241 @@
+.resume-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vh;
+  overflow-x: hidden;
+}
+
+.resume-text {
+  color: white;
+  font-family: 'MuseoModerno', cursive;
+  color: #54DD8C;
+  font-size: 3rem;
+}
+
+.resume-contact-info {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  grid-gap: 20px;
+}
+
+.resume-contact-link {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: 'MuseoModerno', cursive;
+  color: #54DD8C;
+}
+
+.resume-contact-text {
+  font-size: 1.3rem;
+  font-family: 'MuseoModerno', cursive;
+  color: #54DD8C;
+}
+
+/* Education portion of page */
+.resume-education {
+  width: 100%;
+}
+
+.resume-education-text-container {
+  margin-top: 1vh;
+  width: 100%;
+  border-bottom: 2px solid #54DD8C;
+}
+
+.resume-education-text {
+  font-family: 'MuseoModerno', cursive;
+  font-size: 3rem;
+  color: #54DD8C;
+  margin-left: 1.4%;
+}
+
+.resume-education-utk {
+  width: 100%;
+}
+
+.resume-education-utk-name-container {
+  width: 100%;
+  display: flex;
+  flex-direction: start;
+}
+
+.resume-education-utk-name {
+  color: #54DD8C;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.9rem;
+  margin-left: 1.4%;
+}
+
+.resume-education-utk-city {
+  color: #54DD8C;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.3rem;
+  margin-left: auto;
+  margin-right: 1.5%;
+}
+
+.resume-education-utk-major-container {
+  width: 100%;
+  display: flex;
+  flex-direction: start;
+}
+
+.resume-education-utk-degree {
+  color: #54DD8C;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.3rem;
+  margin-left: 1.4%;
+}
+
+.resume-education-utk-graduation {
+  color: #54DD8C;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.3rem;
+  margin-left: auto;
+  margin-right: 1.5%;
+}
+
+.resume-education-utk-major {
+  color: #54DD8C;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.3rem;
+  margin-left: 1.4%;
+}
+
+.resume-education-utk-involvement {
+  color: #54DD8C;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.3rem;
+  margin-left: 1.4%;
+}
+
+.resume-education-utk-gpa {
+  color: #54DD8C;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.3rem;
+  margin-left: 1.4%;
+}
+
+/* Job Experience portion of the page */
+.resume-job-experience {
+  width: 100%;
+}
+
+.resume-job-experience-text-container {
+  margin-top: 4vh;
+  width: 100%;
+  border-bottom: 2px solid #54DD8C;
+}
+
+.resume-job-experience-text {
+  font-family: 'MuseoModerno', cursive;
+  font-size: 3rem;
+  color: #54DD8C;
+  margin-left: 1.4%;
+}
+
+.resume-job-experience-h4i {
+  width: 100%;
+}
+
+.resume-job-experience-h4i-name-container {
+  width: 100%;
+  display: flex;
+  flex-direction: start;
+}
+
+.resume-job-experience-h4i-name {
+  color: #54DD8C;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.9rem;
+  margin-left: 1.4%;
+}
+
+.resume-job-experience-h4i-city {
+  color: #54DD8C;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.3rem;
+  margin-left: auto;
+  margin-right: 1.5%;
+}
+
+.resume-job-experience-h4i-title-container {
+  width: 100%;
+  display: flex;
+  flex-direction: start;
+}
+
+.resume-job-experience-h4i-title {
+  color: #54DD8C;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.3rem;
+  margin-left: 1.4%;
+}
+
+.resume-job-experience-h4i-time {
+  color: #54DD8C;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.3rem;
+  margin-left: auto;
+  margin-right: 1.5%;
+}
+
+.resume-job-experience-list {
+  margin-left: 3%;
+}
+
+.resume-job-experience-list-item {
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.3rem;
+  color: #54DD8C;
+}
+
+.resume-job-experience-krc {
+  width: 100%;
+}
+
+.resume-job-experience-krc-name-container {
+  width: 100%;
+  display: flex;
+  flex-direction: start;
+}
+
+.resume-job-experience-krc-name {
+  color: #54DD8C;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.9rem;
+  margin-left: 1.4%;
+}
+
+.resume-job-experience-krc-city {
+  color: #54DD8C;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.3rem;
+  margin-left: auto;
+  margin-right: 1.5%;
+}
+
+.resume-job-experience-krc-title-container {
+  width: 100%;
+  display: flex;
+  flex-direction: start;
+}
+
+.resume-job-experience-krc-title {
+  color: #54DD8C;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.3rem;
+  margin-left: 1.4%;
+}
+
+.resume-job-experience-krc-time {
+  color: #54DD8C;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.3rem;
+  margin-left: auto;
+  margin-right: 1.5%;
+}

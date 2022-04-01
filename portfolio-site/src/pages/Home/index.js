@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useState , useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa'
 // import pixelart from './pixelart3.png';
+import pixelimg from './pixelart2.jpg'
 import './home.css'
 
 const Home = () => {
   return (
     <div className="main-content">
-      <Link to="/home" className="grid-item" id="resume">
+      <Link to="/resume" className="grid-item" id="resume">
         <h1 className="text">Resume</h1>
         <FaIcons.FaPaperclip className="Icon resume-icon"/>
       </Link>
@@ -20,9 +21,10 @@ const Home = () => {
         <FaIcons.FaMusic className="Icon music-icon" />
       </Link>
       <Link to="/pixelart" className="grid-item" id="pixelart">
-        <div className="pixelartimg"/>
-        {/* <h1 className="pixeltext">Pixel Art</h1>
-        <FaIcons.FaBrush className="Icon pixelart-icon" /> */}
+        {/* <div className="pixelartimg"/> */}
+        <img src={pixelimg} alt="pixel cover" />
+        <h1 className="pixeltext">Pixel Art</h1>
+        <FaIcons.FaBrush className="Icon pixelart-icon" />
       </Link>
       <Link to="/projects" className="grid-item" id="projects">
         <h1 className="text">Projects</h1>
