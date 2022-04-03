@@ -1,7 +1,6 @@
-import React, { useState , useEffect} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa'
-// import pixelart from './pixelart3.png';
 import pixelimg from './pixelart2.jpg'
 import './home.css'
 
