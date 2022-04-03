@@ -30,7 +30,6 @@ function Navbar() {
       
       <div className="link-container">
         <Link to="/aboutme" className="navlink">about me</Link>
-        <Link to="/resume" className="navlink">resume</Link>
         <Link to="/projects" className="navlink">projects</Link>
         <Link to="/music" className="navlink">music</Link>
         <Link to="/pixelart" className="navlink">pixel art</Link>
