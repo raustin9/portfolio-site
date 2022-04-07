@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.06a5f52d.css",
+    "main.js": "/static/js/main.deabfda4.js",
+    "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
+    "static/media/cycles.mp3": "/static/media/cycles.94b1f228e9a5e603d324.mp3",
+    "static/media/122418.mp3": "/static/media/122418.3fa715c0d443ad72eada.mp3",
+    "static/media/eclipse.mp3": "/static/media/eclipse.98ddf9bc4fe9cb97a1db.mp3",
+    "static/media/markmywordsremix.mp3": "/static/media/markmywordsremix.64d9bf29b44dc058a835.mp3",
+    "static/media/pressure.mp3": "/static/media/pressure.1065e50a4ae25045e02a.mp3",
+    "static/media/lonely.mp3": "/static/media/lonely.9508d864984311c910f7.mp3",
+    "static/media/Dogma.mp3": "/static/media/Dogma.95b3fc7d8ef87b1cfdf6.mp3",
+    "static/media/32120.mp3": "/static/media/32120.b025ab84332beb7a0b47.mp3",
+    "static/media/everest.mp3": "/static/media/everest.f025df2ad692c35fc18d.mp3",
+    "static/media/sunsetvaporwave.jpg": "/static/media/sunsetvaporwave.8a7afef4fc846ef278c2.jpg",
+    "static/media/pixelart3.png": "/static/media/pixelart3.475e6649bb004d5b702b.png",
+    "static/media/pixelart2.jpg": "/static/media/pixelart2.21e8e7e5191b4422f74a.jpg",
+    "index.html": "/index.html",
+    "main.06a5f52d.css.map": "/static/css/main.06a5f52d.css.map",
+    "main.deabfda4.js.map": "/static/js/main.deabfda4.js.map",
+    "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06a5f52d.css",
+    "static/js/main.deabfda4.js"
+  ]
+}
