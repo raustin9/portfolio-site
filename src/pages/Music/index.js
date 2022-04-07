@@ -11,8 +11,8 @@ import lonely from './Songs/lonely.mp3'
 import pressure from './Songs/pressure.mp3'
 import eclipse from './Songs/eclipse.mp3'
 
-import cityimg from './Images/vaporwavecity.jpg'
-import greenimg from './Images/greenaesthetic.jpg'
+// import cityimg from './Images/vaporwavecity.jpg'
+// import greenimg from './Images/greenaesthetic.jpg'
 import sunset from './Images/sunsetvaporwave.jpg'
 
 import './Styles/music.css'
