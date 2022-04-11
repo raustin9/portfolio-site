@@ -1,7 +1,7 @@
 .main-content {
   margin-top: 3%;
   height: 80%;
-  width: 85%;
+  width: 90%;
   display: grid;
   background-color: #000000;
   grid-template-columns: repeat(3, 2fr);
@@ -11,8 +11,10 @@
 
 .grid-item {
   position: relative;
-  border: 2px solid #54DD8C;
-  background-color: #000000;
+  /* border: 2px solid #54DD8C; */
+  /* border: 1px solid #54DD8C; */
+  border: none;
+  background-color: #00180A;
   border-radius: 0;
   position: relative;
   color: #fff;
@@ -67,16 +69,23 @@
   transition: 200ms ease;
   max-width: 100%;
   z-index: 0;
+  background-color: #000000;
 }
 #pixelart:hover > img {
   -webkit-filter: blur(6px); 
   filter: blur(6px);
   transition: 200ms ease;
+  background-color: none;
 }
 #pixelart:hover > .pixelartimg {
   -webkit-filter: blur(4px); 
   filter: blur(6px);
   transition: 200ms ease;
+  border: none;
+}
+
+#pixelart:hover {
+  background-color: #000000;
 }
 
 #aboutme {
