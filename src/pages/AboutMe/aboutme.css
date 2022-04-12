@@ -7,9 +7,7 @@
   flex-direction: column;
   align-items: center;
   overflow-x: hidden; 
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr); */
+  
   padding: 0;
 }
 
@@ -31,11 +29,42 @@
   border: 2px solid #54DD8C;
 }
 
+.aboutme-general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+.aboutme-grid {
+  width: 100%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
 .aboutme-grid-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.aboutme-grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding-top: 20px;
+}
+
+.aboutme-grid-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .aboutme-section-title {
@@ -53,8 +82,29 @@
   font-weight: normal;
 }
 
+.aboutme-text-p {
+  font-family: 'Montserrat', sans-serif;
+  color: #54DD8C;
+  font-size: 1.3rem;
+  text-align: left;
+  line-height: 30px;
+  margin-left: 15px;
+}
+
+.aboutme-education-courses {
+  width: 90%;
+  margin-left: 30px;
+}
+
+.aboutme-education-courses-item {
+  font-family: 'Montserrat', sans-serif;
+  color: #54DD8C;
+  font-size: 1.3rem;
+  line-height: 30px;
+}
+
 /* id's for the grid items */
-#aboutme-interests {
+#aboutme-education {
   grid-row: 1 / span 1;
   grid-column: 1 / span 1;
 }
@@ -64,12 +114,12 @@
   grid-column: 2 / span 1;
 }
 
-#aboutme-involvement {
+#aboutme-other {
   grid-row: 2 / span 1;
   grid-column: 1 / span 1;
 }
 
-#aboutme-general {
+#aboutme-skills {
   grid-row: 2 / span 1;
   grid-column: 2 / span 1;
 }
