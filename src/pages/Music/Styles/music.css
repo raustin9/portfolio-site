@@ -12,11 +12,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 20px;
+  row-gap: 30px;
   width: 50%;
   overflow-y: scroll;
   overflow-x: hidden;
   height: 90%;
+  padding-top: 40px;
 }
 
 /* Songs styling */
@@ -26,8 +27,13 @@
   min-width: 700px;
   width: 80%;
   height: 110px;
-  background-color: #000000;
-  border-bottom: 2px solid #54DD8C;
+  /* background-color: #000000; */
+  /* border-bottom: 2px solid #54DD8C; */
+  border-radius: 15px;
+  background: linear-gradient(145deg, #126864, #157c77);
+  box-shadow:  7px 7px 18px #11635e,
+             -7px -7px 18px #178580;
+
   display: flex;
 }
 
@@ -42,6 +48,7 @@
   height: 110px;
   width: 110px;
   object-fit: cover;
+  border-radius: 15px 0 0 15px;
 }
 
 .music-controls {
@@ -54,7 +61,8 @@
 
 .song-title {
   font-family: 'MuseoModerno', cursive;
-  color: #54DD8C;
+  /* color: #54DD8C; */
+  color: #56ab91;
   font-size: 20px;
   margin-left: 15px;
 }
@@ -69,7 +77,8 @@ audio {
 
 .play-btn {
   font-size: 1.5rem;
-  color: #54DD8C;
+  /* color: #54DD8C; */
+  color: #56ab91;
   transition: 200ms;
   margin-left: 15px;
 }
@@ -82,7 +91,8 @@ audio {
 
 .volumesvg {
   margin-left: 8px;
-  color: #54DD8C;
+  /* color: #54DD8C; */
+  color: #56ab91;
   transition: 200ms;
   font-size: 1.8rem;
 }
@@ -147,31 +157,39 @@ audio {
 }
 
 .music-link:hover > .music-logo {
-  color: #ffffff;
+  /* color: #ffffff; */
+  filter: drop-shadow(-10px -10px 29px #0e5450);
+  /* fill: transparent; */
   transition: 200ms ease;
 }
 
 .music-link:hover > .music-logo-shadow {
-  color: #54DD8C;
+  /* color: #54DD8C; */
+  /* fill: transparent; */
+  filter: drop-shadow(10px 10px 29px #1a948e);
   transition: 200ms;
 }
 
 .music-logo {
   position: absolute;
-  color: #54DD8C;
-  font-size: 18vw;
+  /* color: #54DD8C; */
+  color: #14746f;
+  filter: drop-shadow(10px 10px 29px #0e5450);
+  font-size: 20vw;
   transition: 200ms ease;
   z-index: 2;
 }
 
 .music-logo-shadow {
   position: absolute;
-  color: #ffffff;
-  font-size: 18vw;
+  /* color: #ffffff; */
+  color: #14746f;
+  filter: drop-shadow(-10px -10px 29px #1a948e);
+  font-size: 20vw;
   transition: 200ms ease;
   z-index: 1;
-  margin-left: 6px;
-  margin-top: 6px;
+  /* margin-left: 6px;
+  margin-top: 6px; */
 }
 
 .context-text-container {
@@ -195,13 +213,13 @@ audio {
 }
 
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: #14746f;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #54DD8C;
+  background: #56ab91;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #93E1B3;
+  background: #67b99a;
 }
