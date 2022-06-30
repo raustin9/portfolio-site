@@ -58,17 +58,17 @@ const AboutMe = () => {
                 <h1 className="aboutme-text" >Hobbies</h1>
               </div>
               <ul className="aboutme-education-courses">
-                <li className="aboutme-education-courses-item">Video Game Design  -  I do this in my spare time when I can, and I like to make 2D rpg games. I do not have much work to my name because I don't normally put it in the public, but I'm working on something really cool right now :)</li>
-                <li className="aboutme-education-courses-item">Music Production  -  I love making music for both my video games and for whatever. I have not released anything in a long time, but I still make some stuff. Again, more will be coming out with the video game</li>
-                <li className="aboutme-education-courses-item">Hack4Impact  -  This is a group at UTK that builds software apps for non-profit organizations in East Tennessee. I spend a lot of time working on my team for them, and it is a lot of fun</li>
-                <li className="aboutme-education-courses-item">General Programming  -  I make small projects here and there for fun. The favorite one is the Image Processing project that I did, and that one allows the user to input an image, and encode a secret message to it, or decode a message from one</li>
+                <li className="aboutme-education-courses-item">Video Game Design</li>
+                <li className="aboutme-education-courses-item">Music Production</li>
+                <li className="aboutme-education-courses-item">Hack4Impact</li>
+                <li className="aboutme-education-courses-item">General Programming</li>
               </ul>
             </div>
-            <div className="aboutme-grid-item" id="aboutme-other">
+            {/* <div className="aboutme-grid-item" id="aboutme-other">
               <div className="aboutme-grid-title">
-                {/* <h1 className="aboutme-text" ></h1> */}
+                
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

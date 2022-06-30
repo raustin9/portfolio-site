@@ -26,8 +26,12 @@ function Music() {
       <div className="music-context">
         <div className="music-link-div">
           <a rel="noreferrer" target="_blank" href="https://soundcloud.com/user-940134563" className="music-link">
-            <FaIcon.FaMusic className="music-logo"/>
-            <FaIcon.FaMusic className="music-logo-shadow"/>
+            {/* <FaIcon.FaMusic className="music-logo"/>
+            <FaIcon.FaMusic className="music-logo-shadow"/> */}
+            
+              <FaIcon.FaMusic className="music-logo"/>
+              <FaIcon.FaMusic className="music-logo-shadow"/>
+            
           </a>
         </div>
         <div className="context-text-container">

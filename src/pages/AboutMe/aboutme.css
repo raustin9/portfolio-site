@@ -26,7 +26,7 @@
   margin-top: 40px;
   padding: 30px;
   border-radius: 8px;
-  border: 2px solid #54DD8C;
+  border: 2px solid #000000;
 }
 
 .aboutme-general {
@@ -45,7 +45,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 20px;
+  grid-gap: 40px;
 }
 
 .aboutme-grid-item {
@@ -58,7 +58,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 
 .aboutme-grid-title {
@@ -69,13 +69,13 @@
 
 .aboutme-section-title {
   font-family: 'MuseoModerno', cursive;
-  color: #54DD8C;
+  color: #000000;
   font-size: 1.3rem;
 }
 
 .aboutme-text {
   font-family: 'Montserrat', sans-serif;
-  color: #54DD8C;
+  color: #000000;
   font-size: 1.7rem;
   text-align: center;
   line-height: 40px;
@@ -84,7 +84,7 @@
 
 .aboutme-text-p {
   font-family: 'Montserrat', sans-serif;
-  color: #54DD8C;
+  color: #000000;
   font-size: 1.3rem;
   text-align: left;
   line-height: 30px;
@@ -98,15 +98,15 @@
 
 .aboutme-education-courses-item {
   font-family: 'Montserrat', sans-serif;
-  color: #54DD8C;
+  color: #000000;
   font-size: 1.3rem;
   line-height: 30px;
 }
 
 /* id's for the grid items */
 #aboutme-education {
-  grid-row: 1 / span 1;
-  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
 }
 
 #aboutme-hobbies {
@@ -120,6 +120,6 @@
 }
 
 #aboutme-skills {
-  grid-row: 2 / span 1;
-  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 1;
 }
