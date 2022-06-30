@@ -18,7 +18,12 @@
 
 .projects-grid-item:hover {
   transition: 200ms;
-  background-color: #141414;
+  /* background-color: #141414; */
+  /* background-color: #56ab91;  */
+  /* box-shadow: inset -15px -15px 30px #11635e, inset 15px 15px 30px #178580; */
+  background: linear-gradient(315deg, #157c77, #126864);
+  box-shadow:  -15px -15px 30px #11635e,
+               15px 15px 30px #178580;
 }
 
 #portfolio-site {
@@ -37,7 +42,8 @@
 }
 
 .project-title {
-  color: #54DD8C;
+  /* color: #54DD8C; */
+  color: #000000;
   font-family: 'MuseoModerno', cursive;
   font-size: 1.8rem;
   font-weight: normal;
@@ -50,5 +56,6 @@
   font-size: 1.4rem;
   color: #ffffff;
   text-align: center;
-  color: #54DD8C;
+  /* color: #54DD8C; */
+  color: #000000;
 }

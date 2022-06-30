@@ -4,8 +4,9 @@
   z-index: 10;
   height: 7vh;
   width: 100vw;
-  background-color: #000000;
-  border-bottom: 2px solid #54DD8C;
+  /* background-color: #000000; */
+  /* border-bottom: 2px solid #54DD8C; */
+  background-color: #248277;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +52,8 @@
 
 .ghli {
   font-size: 2rem;
-  color: #54DD8C;
+  /* color: #54DD8C; */
+  color: #000000;
   transition: 200ms;
 }
 
@@ -65,7 +67,8 @@
   height: 100%;
   width: 8em;
   font-family: 'MuseoModerno', cursive;
-  color: #54DD8C;
+  /* color: #54DD8C; */
+  color: #000000;
   font-size: 1.3em;
   text-decoration: none;
   /* border-left: 2px solid #54DD8C; */
@@ -76,7 +79,8 @@
 }
 
 .navlink:hover {
-  background-color: #54DD8C;
+  /* background-color: #54DD8C; */
+  background-color: #56ab91;
   color: #000000;
   transition: 200ms;
   font-size: 1.5em;
@@ -85,7 +89,8 @@
 .logo-text {
   margin-left: 5px;
   margin-right: auto;
-  color: #54DD8C;
+  /* color: #54DD8C; */
+  color: #000000;
   font-family: 'MuseoModerno', cursive;
   font-size: 1.8em;
   margin-right: .5em;
@@ -109,30 +114,37 @@
   /* border-right: 2px solid #54DD8C; */
   font-family: 'MuseoModerno', cursive;
   font-size: 1.3em;
-  color: #54DD8C;
+  /* color: #54DD8C; */
+  color: #000000;
 }
 
 .contact:hover {
-  background-color: #54DD8C;
+  /* background-color: #54DD8C; */
+  background-color: #56ab91;
   font-size: 1.5em;
   color: #000000;
   cursor: pointer;
   transition: 200ms ease;
 }
 
+.contact:hover > .dropdown {
+  background-color: #56ab91;
+}
+
 /* Dropdown menu */
 .dropdown {
   position: absolute;
   width: 8em;
-  background-color: #000000;
+  /* background-color: #000000; */
+  background-color: #248277;
   top: 7vh;
   animation-name: slidedown;
   animation-duration: 200ms;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  border-left: 2px solid #54DD8C;
-  border-bottom: 2px solid #54DD8C;
+  /* border-left: 2px solid #54DD8C;
+  border-bottom: 2px solid #54DD8C; */
   border-bottom-left-radius: 10px;
   z-index: -1;
 }
@@ -157,12 +169,14 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  color: #54DD8C;
+  /* color: #54DD8C; */
+  color: #000000;
   padding-left: 5%;
 }
 
 .menuitem:hover {
-  background-color: #54DD8C;
+  /* background-color: #54DD8C; */
+  background-color: #67b99a;
   color: #000000;
 }
 

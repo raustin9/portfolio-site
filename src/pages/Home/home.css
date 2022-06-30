@@ -1,19 +1,25 @@
 .main-content {
   margin-top: 3%;
   height: 80%;
-  width: 85%;
+  width: 90%;
   display: grid;
-  background-color: #000000;
+  /* background-color: #000000; */
+  /* background: #88d4ab; */
   grid-template-columns: repeat(3, 2fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 20px;
+  grid-gap: 35px;
 }
 
 .grid-item {
   position: relative;
-  border: 2px solid #54DD8C;
-  background-color: #000000;
-  border-radius: 0;
+  /* border: 2px solid #54DD8C; */
+  /* border: 1px solid #54DD8C; */
+  border: none;
+  /* background-color: #00180A; */
+  background: #14746f;
+  box-shadow:  19px 19px 37px #11635e,
+             -19px -19px 37px #178580;
+  border-radius: 27px;
   position: relative;
   color: #fff;
   font-weight: bold;
@@ -26,7 +32,10 @@
 }
 
 .grid-item:hover {
-  background-color: #54DD8C;
+  /* background-color: #54DD8C; */
+  box-shadow: inset 19px 19px 37px #11635e,
+            inset -19px -19px 37px #178580;
+  transition: 1s;
   color: #ffffff;
 }
 .grid-item:hover > .text {
@@ -35,7 +44,8 @@
 
 .text {
   font-family: 'MuseoModerno', cursive;
-  color: #54DD8C;
+  /* color: #54DD8C; */
+  color: #000000;
   /* position: absolute; */
 }
 
@@ -48,6 +58,7 @@
 #resume {
   grid-row: 1 / span 1;
   grid-column: 2 / span 1;
+  z-index: 10;
 }
 
 #pixelart {
@@ -67,21 +78,30 @@
   transition: 200ms ease;
   max-width: 100%;
   z-index: 0;
+  border-radius: 27px;
+  background-color: #000000;
 }
 #pixelart:hover > img {
-  -webkit-filter: blur(6px); 
-  filter: blur(6px);
+  -webkit-filter: blur(4px); 
+  filter: blur(4px);
   transition: 200ms ease;
+  background-color: none;
 }
 #pixelart:hover > .pixelartimg {
   -webkit-filter: blur(4px); 
-  filter: blur(6px);
+  filter: blur(4px);
   transition: 200ms ease;
+  border: none;
+}
+
+#pixelart:hover {
+  background-color: #000000;
 }
 
 #aboutme {
   grid-row: 2 / span 1;
   grid-column: 1 / span 1;
+  z-index: 10;
 }
 
 #projects {
@@ -125,6 +145,7 @@
 .pixeltext {
   position: absolute;
   font-family: 'MuseoModerno', cursive;
-  color: #54DD8C;
+  /* color: #54DD8C; */
+  color: #000000;
   transition: 200ms ease;
 }
