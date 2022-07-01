@@ -1,0 +1,68 @@
+.sidenav-container {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  height: 7vh;
+  width: 100vw;
+  background-color: #248277;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text-mobile {
+  color: #000000;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.5em;
+  transition: 200ms ease;
+  /* margin-right: .7vw;
+  margin-left: .7vw; */
+}
+
+.sidemenu-bars {
+  position: fixed;
+  font-size: 1.9em;
+  left: 3vw;
+}
+
+.sidenav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+
+.sidenav-menu {
+  background-color: #248277;
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+  z-index: 15;
+  flex-direction: column;
+
+}
+
+.close-sidenav {
+  position: fixed;
+  font-size: 2.2em;
+  top: 2vh;
+  left: 3vw; 
+  margin-bottom: 10vh;
+}
+
+.sidenavlink {
+  height: 10vh;
+  font-size: 1.5em;
+  font-family: 'MuseoModerno', cursive;
+  text-decoration: none;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidenav-link-container {
+  margin-top: 6vh;
+}
