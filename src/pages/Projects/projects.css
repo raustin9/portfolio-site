@@ -16,15 +16,20 @@
   transition: 200ms;
 }
 
-.projects-grid-item:hover {
-  transition: 200ms;
-  /* background-color: #141414; */
-  /* background-color: #56ab91;  */
-  /* box-shadow: inset -15px -15px 30px #11635e, inset 15px 15px 30px #178580; */
-  background: linear-gradient(315deg, #157c77, #126864);
-  box-shadow:  -15px -15px 30px #11635e,
-               15px 15px 30px #178580;
+/* Keep hover effects on desktop */
+@media screen and (min-width: 700px) {
+
+  .projects-grid-item:hover {
+    transition: 200ms;
+    /* background-color: #141414; */
+    /* background-color: #56ab91;  */
+    /* box-shadow: inset -15px -15px 30px #11635e, inset 15px 15px 30px #178580; */
+    background: linear-gradient(315deg, #157c77, #126864);
+    box-shadow:  -15px -15px 30px #11635e,
+                15px 15px 30px #178580;
+  }
 }
+
 
 #portfolio-site {
   grid-row: 1 / span 1;
@@ -58,4 +63,18 @@
   text-align: center;
   /* color: #54DD8C; */
   color: #000000;
+}
+
+@media screen and (max-width: 800px) {
+  .project-text {
+    font-size: 1em;
+  }
+
+  .project-title {
+    font-size: 1.4em;
+  }
+
+  .projects-grid-item {
+    padding: 10px;
+  }
 }

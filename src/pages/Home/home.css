@@ -19,6 +19,8 @@
   background: #14746f;
   box-shadow:  19px 19px 37px #11635e,
              -19px -19px 37px #178580;
+  /* box-shadow: inset 19px 19px 37px #11635e,
+            inset -19px -19px 37px #178580; */
   border-radius: 27px;
   position: relative;
   color: #fff;
@@ -33,9 +35,12 @@
 
 .grid-item:hover {
   /* background-color: #54DD8C; */
-  box-shadow: inset 19px 19px 37px #11635e,
-            inset -19px -19px 37px #178580;
-  transition: 1s;
+  /* box-shadow: inset 19px 19px 37px #11635e,
+            inset -19px -19px 37px #178580; */
+  /* box-shadow: 19px 19px 37px #11635e,
+             -19px -19px 37px #178580; */
+  box-shadow: none;
+  transition: 300ms;
   color: #ffffff;
 }
 .grid-item:hover > .text {
@@ -79,7 +84,7 @@
   max-width: 100%;
   z-index: 0;
   border-radius: 27px;
-  background-color: #000000;
+  /* background-color: #000000; */
 }
 #pixelart:hover > img {
   -webkit-filter: blur(4px); 
@@ -95,7 +100,7 @@
 }
 
 #pixelart:hover {
-  background-color: #000000;
+  /* background-color: #000000; */
 }
 
 #aboutme {

@@ -57,15 +57,13 @@
   transition: 200ms;
 }
 
-.ghli:hover {
-  font-size: 2.3rem;
-  transition: 200ms;
-}
+
 
 .navlink {
   text-decoration: none;
+  text-align: center;
   height: 100%;
-  width: 8em;
+  width: 10vw;
   font-family: 'MuseoModerno', cursive;
   /* color: #54DD8C; */
   color: #000000;
@@ -84,6 +82,7 @@
   color: #000000;
   transition: 200ms;
   font-size: 1.5em;
+  width: 11vw;
 }
 
 .logo-text {
@@ -105,7 +104,7 @@
 
 .contact {
   height: 100%;
-  width: 8em;
+  width: 10vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,6 +121,7 @@
   /* background-color: #54DD8C; */
   background-color: #56ab91;
   font-size: 1.5em;
+  width: 11vw;
   color: #000000;
   cursor: pointer;
   transition: 200ms ease;
@@ -129,12 +129,14 @@
 
 .contact:hover > .dropdown {
   background-color: #56ab91;
+  width: 11vw;
+  transition: 200ms ease;
 }
 
 /* Dropdown menu */
 .dropdown {
   position: absolute;
-  width: 8em;
+  width: 10vw;
   /* background-color: #000000; */
   background-color: #248277;
   top: 7vh;
@@ -147,6 +149,7 @@
   border-bottom: 2px solid #54DD8C; */
   border-bottom-left-radius: 10px;
   z-index: -1;
+  transition: 200ms ease;
 }
 @keyframes slidedown{
   0% {
@@ -174,12 +177,21 @@
   padding-left: 5%;
 }
 
-.menuitem:hover {
-  /* background-color: #54DD8C; */
-  background-color: #67b99a;
-  color: #000000;
-}
+
 
 .dropicon {
   margin-right: 5%;
+}
+
+@media screen and (min-width: 850px) {
+  .menuitem:hover {
+    /* background-color: #54DD8C; */
+    background-color: #67b99a;
+    color: #000000;
+  }
+  .ghli:hover {
+    font-size: 2.3rem;
+    color: #ffffff;
+    transition: 200ms;
+  }
 }

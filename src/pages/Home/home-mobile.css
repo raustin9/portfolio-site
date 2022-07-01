@@ -1,0 +1,80 @@
+.mobile-home-container {
+  margin-top: 3%;
+  height: 80%;
+  width: 90%;
+  display: grid;
+  /* background-color: #000000; */
+  /* background: #88d4ab; */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 2fr);
+  grid-gap: 35px;
+}
+
+.mobile-grid-item {
+  position: relative;
+  min-height: 10vh;
+  border: none;
+  background: #14746f;
+  box-shadow:  19px 19px 37px #11635e,
+             -19px -19px 37px #178580;
+  border-radius: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms;
+  text-decoration: none;
+  padding: 0;
+}
+
+#mobile-aboutme {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+
+#mobile-music {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+}
+
+#mobile-resume {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+}
+
+#mobile-projects {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+}
+
+#mobile-pixelart {
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 2;
+}
+
+.mobile-text {
+  /* background-color: red; */
+  text-align: center;
+  font-size: 1.6em;
+  font-family: 'MuseoModerno', cursive;
+  color: #000000;
+}
+
+#mobile-pixelart img {
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+  transition: 200ms ease;
+  max-width: 100%;
+  z-index: 0;
+  border-radius: 15px;
+  /* background-color: #000000; */
+}
+
+.mobile-pixeltext {
+  position: absolute;
+  font-family: 'MuseoModerno', cursive;
+  /* color: #54DD8C; */
+  color: #000000;
+  transition: 200ms ease;
+}
