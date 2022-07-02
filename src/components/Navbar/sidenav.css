@@ -26,7 +26,8 @@
 }
 
 .sidenav-menu.active {
-  left: 0;
+  /* left: 0; */
+  transform: translateX(-50%);
   transition: 350ms;
 }
 
@@ -37,7 +38,8 @@
   display: flex;
   position: fixed;
   top: 0;
-  left: -100%;
+  /* left: -100%; */
+  transform: translateX(-200%);
   transition: 850ms;
   z-index: 15;
   flex-direction: column;
