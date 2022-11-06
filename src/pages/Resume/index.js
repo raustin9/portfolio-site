@@ -35,12 +35,13 @@ const Resume = () => {
               <h1 className="resume-job-experience-h4i-city">Knoxville, Tennessee</h1>
             </div>
             <div className="resume-job-experience-h4i-title-container">
-              <h1 className="resume-job-experience-h4i-title">Developer</h1>
+              <h1 className="resume-job-experience-h4i-title">Tech Lead & Bootcamp Director</h1>
               <h1 className="resume-job-experience-h4i-time">February 2021 - Present</h1>
             </div>
             <ul className="resume-job-experience-list">
-              <li className="resume-job-experience-list-item">Work on 6 person team to build software applications for local nonprofits</li>
-              <li className="resume-job-experience-list-item">Work with clients to build their desired application</li>
+              <li className="resume-job-experience-list-item">Lead 6 person team to build free open-source software applications for local nonprofits</li>
+              <li className="resume-job-experience-list-item">Lead 15-member bootcamp to teach them technologies to become developers for the club</li>
+              <li className="resume-job-experience-list-item">Work with project manager to communicate with clients and lead our team in right direction</li>
               <li className="resume-job-experience-list-item">Technologies used: REACT, Typescript, MongoDB, Contentful, Various CSS libraries</li>
             </ul>
           </div>

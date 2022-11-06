@@ -27,7 +27,7 @@
 
 .sidenav-menu.active {
   /* left: 0; */
-  transform: translateX(-50%);
+  transform: translateX(-53%);
   transition: 350ms;
 }
 
