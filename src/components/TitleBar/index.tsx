@@ -16,6 +16,8 @@ import {
   Button,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu"
+import GitHubIcon from "@mui/icons-material/GitHub"
+import LinkedInIcon from "@mui/icons-material/LinkedIn"
 
 interface props {
 
@@ -39,10 +41,11 @@ const items: item[] = [
     page: 'Projects',
     route: '/projects'
   },
+  {
+    page: 'Journal',
+    route: '/journal'
+  },
 ];
-
-const pages = ['About', 'Music', 'Projects'];
-
 
 export default function TitleBar(params: props) {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
@@ -58,15 +61,18 @@ export default function TitleBar(params: props) {
 
   return (
     <>
-      <AppBar position="static">
-        <Container maxWidth="xl">
+      <AppBar position="static" sx={{ backgroundColor: 'inherit', boxShadow: 'none' }}>
+        <Container 
+          maxWidth="xl"
+          sx={{
+          }}
+        >
           <Toolbar disableGutters>
-            {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
             <Typography
-              variant="h6"
+              variant="h5"
               noWrap
               component="a"
-              href="#app-bar-with-responsive-menu"
+              href="/"
               sx={{
                 mr: 2,
                 display: { xs: 'none', md: 'flex' },
@@ -80,7 +86,6 @@ export default function TitleBar(params: props) {
               Reagan Austin
             </Typography>
             
-            {/* For normal size screends */}
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
               <IconButton
                 size="large"
@@ -111,19 +116,53 @@ export default function TitleBar(params: props) {
                 }}
               >
                 {items.map((item) => (
-                  <MenuItem key={item.page} onClick={handleCloseNavMenu}>
+                  <MenuItem 
+                    key={item.page} 
+                    onClick={handleCloseNavMenu} 
+                  >
                     <Link href={item.route} style={{textDecoration: 'none', color: 'black'}}>
-                      <Typography textAlign="center">{item.page}</Typography>
+                      <Typography 
+                        textAlign="center"
+                        sx={{
+                          color: 'black',
+                        }}
+                      >{item.page}</Typography>
                     </Link>
                   </MenuItem>
                 ))}
               </Menu>
             </Box>
+
+            <Link target="_blank" href="https://github.com/raustin9" style={{textDecoration: 'none', color: 'white'}}>
+              <GitHubIcon 
+                sx={{
+                  transition: '150ms',
+                  mr: 3,
+                  "&:hover": {
+                    color: '#6cc644',
+                    transition: '150ms',
+                  }
+                }}
+              />
+            </Link>
+            <Link target="_blank" href="https://www.linkedin.com/in/ralexaustin9/" style={{textDecoration: 'none', color: 'white'}}>
+              <LinkedInIcon 
+                sx={{
+                  transition: '150ms',
+                  mr: 3,
+                  "&:hover": {
+                    color: '#0077B5',
+                    transition: '150ms',
+                  }
+                }}
+              />
+            </Link>
+
             <Typography
               variant="h5"
               noWrap
               component="a"
-              href="#app-bar-with-responsive-menu"
+              href="/"
               sx={{
                 mr: 2,
                 display: { xs: 'flex', md: 'none' },
@@ -142,9 +181,16 @@ export default function TitleBar(params: props) {
                 <Button
                   key={item.page}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: 'white', display: 'block' }}
+                  sx={{ 
+                    my: 2, 
+                    color: 'white', 
+                    display: 'block',
+                    "&:hover": {
+                      backgroundColor: '#864879'
+                    }
+                  }}
                 >
-                  <Link href={item.route}> {item.page} </Link>
+                  <Link href={item.route} style={{textDecoration: 'none', color: 'white'}}> {item.page} </Link>
                 </Button>
               ))}
             </Box>
