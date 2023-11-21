@@ -76,7 +76,7 @@ export default function TitleBar(params: props) {
               sx={{
                 mr: 2,
                 display: { xs: 'none', md: 'flex' },
-                fontFamily: 'monospace',
+                fontFamily: 'initial',
                 fontWeight: 700,
                 letterSpacing: '.15rem',
                 color: 'inherit',
@@ -167,7 +167,7 @@ export default function TitleBar(params: props) {
                 mr: 2,
                 display: { xs: 'flex', md: 'none' },
                 flexGrow: 1,
-                fontFamily: 'monospace',
+                fontFamily: 'initial',
                 fontWeight: 700,
                 letterSpacing: '.15rem',
                 color: 'inherit',
