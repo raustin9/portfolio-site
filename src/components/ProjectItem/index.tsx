@@ -23,6 +23,12 @@ interface props {
 
 export default function ProjectItem(params: props) {
   // const [isOpen, setIsOpen] = useState<boolean>(false);
+  const colors = [
+    'cyan',
+    'lightgreen',
+    'violet',
+  ];
+
   return <>
   <Box
         sx={{
@@ -47,17 +53,18 @@ export default function ProjectItem(params: props) {
             color: 'white',
             flexGrow: 1,
             fontFamily: 'serif',
-            fontWeight: 700,
-            letterSpacing: '0.07rem',
+            fontWeight: 500,
+            letterSpacing: '0.05rem',
           }}
         >{params.name}</Typography>
         {
-          params.tech.map((item) => {
+          params.tech.map((item, index) => {
             return <Typography
               key={item}
               variant='inherit'
               sx={{
-                color: '#dddddd',
+                // color: '#dddddd',
+                color: `${colors[index % colors.length]}`,
                 fontSize: '1rem',
                 fontFamily: 'serif',
                 mr: 1,

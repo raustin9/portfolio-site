@@ -159,7 +159,7 @@ export default function Home() {
               </Link>
             </Grid> 
             <Grid item xs={1}>
-              <Link href="/Journal" style={{textDecoration: 'none', color: 'white'}}>
+              <Link href="/journal" style={{textDecoration: 'none', color: 'white'}}>
                 <Box sx={{
                   display: 'flex',
                   flexDirection: 'column',

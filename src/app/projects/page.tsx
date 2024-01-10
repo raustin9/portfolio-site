@@ -21,13 +21,39 @@ export default function ProjectsPage() {
     }}>
       <ProjectItem 
         name="Pegasus Game Engine" 
-        tech={["C++", "Vulkan"]} 
-        github=""
-        // handleClose={} 
+        tech={["C++", "Vulkan", "SPIR-V"]} 
+        github="https://github.com/raustin9/YetAnotherEngine"
       />
-      {/* <ProjectItem name="C Web Server" tech={["C"]}github=""/> 
-      <ProjectItem name="Envy Rendering Engine" tech={["WebGL", "JavaScript"]}github="" url="https://web.eecs.utk.edu/~raustin9/envy/"/> 
-      <ProjectItem name="ThunderBird Compiler" tech={["C++", "LLVM"]}github=""/>  */}
+      <ProjectItem 
+        name="Envy Rendering Engine" 
+        tech={["JavaScript", "WebGL", "GLSL"]} 
+        github="https://github.com/raustin9/Envy-Rendering-Engine"
+      />
+      <ProjectItem 
+        name="ThunderBird Compiler" 
+        tech={["C++", "LLVM"]} 
+        github="https://github.com/raustin9/ThunderBirdCompiler"
+      />
+      <ProjectItem 
+        name="C Webserver" 
+        tech={["C"]} 
+        github="https://github.com/raustin9/CWebServer"
+      />
+      <ProjectItem 
+        name="Rust Webserver" 
+        tech={["Rust", "Tokio"]} 
+        github="https://github.com/raustin9/rust_web_server_basic"
+      />
+      <ProjectItem 
+        name="Aurora Text Editor" 
+        tech={["Rust"]} 
+        github="https://github.com/raustin9/Aurora-Text-Editor"
+      />
+      <ProjectItem 
+        name="Scratchbook" 
+        tech={["TypeScript", "React"]} 
+        github="https://github.com/raustin9/ScratchBookNotes"
+      />
     </Box>
   </>
 }
