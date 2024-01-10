@@ -1,7 +1,25 @@
+import { Box, Typography } from "@mui/material";
+
 export default function JournalPage() {
   return (
     <>
-      <h1>Journal</h1>
+      <Box
+        sx={{
+          display: 'flex',
+          height: '50%',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <Typography
+          sx={{
+            fontSize: '4rem',
+            color: '#fff',
+            fontFamily: 'serif',
+          }}>
+            Journal Coming Soon!
+          </Typography>
+      </Box>
     </>
   )
 }
