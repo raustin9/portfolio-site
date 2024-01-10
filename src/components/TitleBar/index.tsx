@@ -76,14 +76,15 @@ export default function TitleBar(params: props) {
               sx={{
                 mr: 2,
                 display: { xs: 'none', md: 'flex' },
-                fontFamily: 'initial',
+                fontFamily: 'serif',
+                fontSize: '2.5rem',
                 fontWeight: 700,
                 letterSpacing: '.15rem',
                 color: 'inherit',
                 textDecoration: 'none',
               }}
             >
-              Reagan Austin
+              R
             </Typography>
             
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -167,14 +168,15 @@ export default function TitleBar(params: props) {
                 mr: 2,
                 display: { xs: 'flex', md: 'none' },
                 flexGrow: 1,
-                fontFamily: 'initial',
+                fontFamily: 'serif',
+                fontSize: '2rem',
                 fontWeight: 700,
                 letterSpacing: '.15rem',
                 color: 'inherit',
                 textDecoration: 'none',
               }}
             >
-             Reagan Austin 
+              Reagan Austin
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {items.map((item) => (
@@ -185,6 +187,7 @@ export default function TitleBar(params: props) {
                     my: 2, 
                     color: 'white', 
                     display: 'block',
+                    fontFamily: 'serif',
                     "&:hover": {
                       backgroundColor: '#864879'
                     }
