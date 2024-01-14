@@ -67,7 +67,12 @@ export default function TitleBar(params: props) {
           sx={{
           }}
         >
-          <Toolbar disableGutters>
+          <Toolbar disableGutters
+            sx={{
+              display: {xs: 'flex'},
+              justifyContent: { xs: 'space-evenly', sm: ''}
+            }}
+          >
             <Typography
               variant="h5"
               noWrap
@@ -84,10 +89,13 @@ export default function TitleBar(params: props) {
                 textDecoration: 'none',
               }}
             >
-              R
+              A
             </Typography>
             
-            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            <Box sx={{ 
+              flexGrow: 0, 
+              display: { xs: 'flex', md: 'none' },
+            }}>
               <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -146,6 +154,25 @@ export default function TitleBar(params: props) {
                 }}
               />
             </Link>
+            <Typography
+              variant="h5"
+              noWrap
+              component="a"
+              href="/"
+              sx={{
+                mr: 3,
+                display: { xs: 'flex', sm: 'none', lg: 'none', md: 'none' },
+                // flexGrow: 1,
+                fontFamily: 'serif',
+                fontSize: '2rem',
+                fontWeight: 500,
+                letterSpacing: '.15rem',
+                color: 'inherit',
+                textDecoration: 'none',
+              }}
+            >
+              AA
+            </Typography>
             <Link target="_blank" href="https://www.linkedin.com/in/ralexaustin9/" style={{textDecoration: 'none', color: 'white'}}>
               <LinkedInIcon 
                 sx={{
@@ -165,9 +192,9 @@ export default function TitleBar(params: props) {
               component="a"
               href="/"
               sx={{
-                mr: 2,
-                display: { xs: 'flex', md: 'none' },
-                flexGrow: 1,
+                // mr: 2,
+                display: { sm: 'flex', xs: 'none',  md: 'none' },
+                flexGrow: 3,
                 fontFamily: 'serif',
                 fontSize: '2rem',
                 fontWeight: 700,
@@ -176,7 +203,7 @@ export default function TitleBar(params: props) {
                 textDecoration: 'none',
               }}
             >
-              Reagan Austin
+              Alexander Austin
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {items.map((item) => (

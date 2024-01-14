@@ -54,7 +54,8 @@ export default function ProjectItem(params: props) {
             flexGrow: 1,
             fontFamily: 'serif',
             fontWeight: 500,
-            letterSpacing: '0.05rem',
+            fontSize: { xs: '0.8rem', md: '2rem' },
+            letterSpacing: { xs: '',  sm: '0.05rem' },
           }}
         >{params.name}</Typography>
         {
@@ -65,7 +66,7 @@ export default function ProjectItem(params: props) {
               sx={{
                 // color: '#dddddd',
                 color: `${colors[index % colors.length]}`,
-                fontSize: '1rem',
+                fontSize:  { md: '1rem', xs: '0.7rem' },
                 fontFamily: 'serif',
                 mr: 1,
               }}

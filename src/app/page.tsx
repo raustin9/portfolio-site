@@ -28,18 +28,18 @@ export default function Home() {
         >
           <Typography
             sx={{
-              fontFamily: 'initial',
-              fontSize: '3rem',
+              fontFamily: 'serif',
+              fontSize: { xs: '2rem', sm: '2.3rem', md: '3rem'},
               color: 'white',
               fontWeight: 600,
               // textDecoration: 'underline'
             }}
           >
-            Reagan Austin
+            Alexander Austin
           </Typography>
           <Typography 
             sx={{
-              fontFamily: 'initial',
+              fontFamily: 'serif',
               fontSize: '1.3rem',
               color: 'white',
             }}
@@ -52,7 +52,7 @@ export default function Home() {
             sx={{
               mt: 3,
               display: {
-                xs: 'none',
+                // xs: 'none',
                 sm: 'inherit',
               }
             }}>
@@ -75,15 +75,17 @@ export default function Home() {
                   <Typography sx={{
                     fontSize: 20,
                     color: 'white',
-                    fontFamily: 'initial',
+                    fontFamily: 'serif',
+                    width: '100%',
+                    textAlign: { xs: 'left', sm: 'center', md: 'center' },
                   }}>
                     About
                   </Typography>
                   <Typography sx={{
-                    fontSize: 16,
+                    fontSize: 18,
                     color: '#ababab',
-                    fontFamily: 'initial',
-                    textAlign: 'center'
+                    fontFamily: 'serif',
+                    textAlign: { xs: 'left', md: 'center' }
                   }}>
                     A little bit about me :)
                   </Typography>
@@ -109,15 +111,17 @@ export default function Home() {
                   <Typography sx={{
                     fontSize: 20,
                     color: 'white',
-                    fontFamily: 'initial',
+                    fontFamily: 'serif',
+                    textAlign: { xs: 'left', sm: 'center', md: 'center' },
+                    width: '100%'
                   }}>
                     Projects
                   </Typography>
                   <Typography sx={{
-                    fontSize: 16,
+                    fontSize: 18,
                     color: '#ababab',
-                    fontFamily: 'initial',
-                    textAlign: 'center'
+                    fontFamily: 'serif',
+                    textAlign: { xs: 'left', md: 'center' }
                   }}>
                     My favorite projects I have worked on throughout the last few years that I am really proud of.
                   </Typography>
@@ -143,15 +147,17 @@ export default function Home() {
                   <Typography sx={{
                     fontSize: 20,
                     color: 'white',
-                    fontFamily: 'initial',
+                    fontFamily: 'serif',
+                    textAlign: { xs: 'left', sm: 'center', md: 'center' },
+                    width: '100%'
                   }}>
                     Music
                   </Typography>
                   <Typography sx={{
-                    fontSize: 16,
+                    fontSize: 18,
                     color: '#ababab',
-                    fontFamily: 'initial',
-                    textAlign: 'center'
+                    fontFamily: 'serif',
+                    textAlign: { xs: 'left', md: 'center' }
                   }}>
                     Some music I make in my free time. I am making some for an upcoming game as well.
                   </Typography>
@@ -177,15 +183,17 @@ export default function Home() {
                   <Typography sx={{
                     fontSize: 20,
                     color: 'white',
-                    fontFamily: 'initial',
+                    fontFamily: 'serif',
+                    width: '100%',
+                    textAlign: { xs: 'left', sm: 'center', md: 'center' },
                   }}>
                     Journal
                   </Typography>
                   <Typography sx={{
-                    fontSize: 16,
+                    fontSize: 18,
                     color: '#ababab',
-                    fontFamily: 'initial',
-                    textAlign: 'center'
+                    fontFamily: 'serif',
+                    textAlign: { xs: 'left', md: 'center' }
                   }}>
                     Some thoughts documenting what I have learned through my professional, academic, and personal experiences.
                   </Typography>
